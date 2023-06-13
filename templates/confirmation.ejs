@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap" rel="stylesheet">
+    <title>Confirmation</title>
+</head>
+
+<style>
+   body {
+    color: #f3f3f3;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: navy;
+}
+
+h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px #000;
+    font-family: 'Wix Madefor Display', sans-serif;
+    color: rgb(240, 234, 234) ;
+}
+
+   .home-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #bebdc4;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #45a049;
+}
+
+</style>
+
+<body>
+    
+    <h1>Thanks for joining us as a <%- user_type %></h1>
+
+    <strong>Name: </strong> <%- name %><br>
+	<strong>Email Address: </strong><%- email %><br>
+	<strong>Password: </strong>**************<br>
+    <strong>University Campus: </strong> <%- university %><br>
+    <strong>Account Type: </strong> <%user_type %> <br>
+
+    Your current coordinates are Latitude: <%- latitude %>, and longitude: <%-longitude%>
+
+    <img src="driver1.jpg" alt="driver1">
+
+
+    <hr>
+    <a href="/" class="home-button">HOME</a>
+</body>
+</html>
